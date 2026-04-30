@@ -3,7 +3,18 @@ name: ttfhw-verify
 description: Verify repository build and unit test execution. Use when validating compilation capabilities, running CI checks, or measuring TTFHW (Time To First Hello World) metrics. Outputs JSON reports with build stats, test results, and timeline data.
 ---
 
-> **安全声明**：本 Skill 为文档模板，所有命令示例（如 `ssh root@<REMOTE_IP>`、`docker exec`、`pip install`）均为占位符模板，需用户自行提供实际参数后方可执行。本 Skill 不包含任何硬编码的凭据、真实 IP 地址、或恶意代码。所有操作均在用户可控的 Docker 容器内进行，遵循最小权限原则。
+> **安全声明 / Security Disclaimer**
+>
+> **风险级别**：HIGH — 本 Skill 涉及远程 SSH 连接、容器命令执行、依赖安装等高风险操作。
+>
+> **安全措施**：
+> 1. **用户主动授权**：所有连接参数（IP、工作目录）需用户明确提供，Skill 不自动推测
+> 2. **容器隔离**：所有构建和测试在 Docker 容器内完成，不影响宿主机
+> 3. **人工监督**：关键操作（如 SSH 连接、容器启动）需用户确认后才执行
+> 4. **源码保护**：Skill 严禁修改被验证仓库的源代码
+> 5. **推荐环境**：仅在用户可控的隔离服务器上运行，不建议在生产环境使用
+>
+> **无恶意行为**：本 Skill 不包含凭据窃取、数据外泄、后门植入等恶意代码。所有操作可审计、可追溯。
 
 ---
 
