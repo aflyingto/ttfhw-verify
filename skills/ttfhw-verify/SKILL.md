@@ -1,6 +1,6 @@
 ---
 name: ttfhw-verify
-description: TTFHW仓库编译验证工具。验证仓库能否成功编译和运行UT，输出JSON报告。触发词："验证仓库"、"编译测试"、"TTFHW"、"构建验证"。支持远端/本地环境，远端服务器IP可配置。使用方法：/ttfhw-verify 或 /ttfhw-verify <仓库名>
+description: Verify repository build and unit test execution. Use when validating compilation capabilities, running CI checks, or measuring TTFHW (Time To First Hello World) metrics. Outputs JSON reports with build stats, test results, and timeline data.
 ---
 
 # TTFHW 仓库编译验证
