@@ -18,7 +18,7 @@ npx skills add aflyingto/ttfhw-verify
 
 - 克隆仓库并检查文档完整性
 - 自动选择合适的 Docker 镜像
-- 尪环尝试解决构建依赖问题（不修改源码）
+- 循环尝试解决构建依赖问题（不修改源码）
 - 运行单元测试
 - 生成 JSON 验证报告
 
